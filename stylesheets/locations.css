@@ -1,0 +1,42 @@
+#location {
+  margin: px-to-rem(120px);
+  text-align: center;
+  color: white; }
+  #location h2 {
+    font-size: px-to-rem(36px); }
+  #location #header-link {
+    font-size: px-to-rem(28px);
+    display: block;
+    color: #8a8a8a;
+    text-decoration: underline;
+    margin: px-to-rem(8px) 0 px-to-rem(22px); }
+    #location #header-link:hover {
+      opacity: .7; }
+  #location input {
+    background-color: transparent;
+    width: px-to-rem(300px);
+    padding: 0 px-to-rem(18px) px-to-rem(10px);
+    display: block;
+    text-align: center;
+    margin: px-to-rem(72px) auto;
+    font-size: px-to-rem(18px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.38); }
+  #location ::placeholder {
+    color: #d3d3d3; }
+  #location h4 {
+    font-size: px-to-rem(24px);
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  #location ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    margin: px-to-rem(18px) auto; }
+  #location li {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: px-to-rem(18px);
+    list-style: none;
+    padding: px-to-rem(18px) px-to-rem(58px); }
+    #location li a {
+      cursor: pointer; }
