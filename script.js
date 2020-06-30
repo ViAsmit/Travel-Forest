@@ -33,3 +33,33 @@ function closeForm(){
   $("#call-num").css("opacity", "1");
   $("#reg").css("opacity", "1");
 }
+
+(function manageTotalUsers(){
+  // console.log("p");
+  let totalUsers = String(getRandom(100000, 200000));
+  // console.log(totalUsers);
+  totalUsers = addComma(totalUsers);
+
+  addToTotalUsers(totalUsers);
+
+  function addToTotalUsers(curr){
+    console.log(curr);
+      let num = Number(curr.replace(",",""));
+      num++;
+      num = String(num);
+      num = addComma(num);
+      // console.log(num);
+      $("#total-users").html(num);
+      setTimeout(function(){
+        addToTotalUsers(num);
+      }, getRandom(100, 2000));
+  }
+
+  function getRandom(min, max){
+    return Math.floor(Math.random()*(max-min) + min);
+  }
+
+  function addComma(num){
+    return num.slice(0,3) + "," + num.slice(3,6);
+  }
+})();

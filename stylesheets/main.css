@@ -211,6 +211,21 @@ p, a, button {
       #register-side-bar #form-section a:hover {
         opacity: .7; }
 
+#current-users {
+  width: 60%;
+  color: white;
+  margin: 12rem auto;
+  padding: 1.375rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.38);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38); }
+  #current-users h3, #current-users h4 {
+    text-align: center; }
+  #current-users h4 {
+    font-size: 2.25rem; }
+  #current-users h3 {
+    font-size: 4.5rem;
+    margin-top: 0.75rem; }
+
 #info-section {
   color: #cfcfcf;
   margin: 5.125rem; }
