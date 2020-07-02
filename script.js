@@ -63,3 +63,5 @@ function closeForm(){
     return num.slice(0,3) + "," + num.slice(3,6);
   }
 })();
+
+// completed
